@@ -13469,9 +13469,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><p>I have selected the data points with indices 100, 150, and 170 for this question. These records differ from each other, so I conclude that they are completely different establishments respectively customer types.</p>
-<h4 id="Index-100---Supermarkt">Index 100 - Supermarkt<a class="anchor-link" href="#Index-100---Supermarkt">&#182;</a></h4><p>This customer could be a big <strong>supermarket</strong>. Supermarkets are characterized by offering customers a wide selection of food and drugstore/household items. Since this establishment has above-average values in the product categories <em>Milk</em>, <em>Grocery</em>, <em>Detergents_Papers</em> and <em>Delicatessen</em>, which I also expect at a supermarket, the assumption not only suggests that it is a supermarket, but also that it is a big supermarket. In addition, the values in the categories <em>Fresh</em> and <em>Frozen</em> are close to the respective averages, which also supports my thesis.</p>
-<h4 id="Index-150---Restaurant">Index 150 - Restaurant<a class="anchor-link" href="#Index-150---Restaurant">&#182;</a></h4><p>This customer could be a <strong>restaurant</strong>. Restaurants - especially good restaurants - are characterized by the use of fresh ingredients. The value of 16225, well above the mean value of 12000 in the category <em>Fresh</em>, indicates that this is such an establishment. Restaurants also need fewer products in the categories <em>Milk</em>, <em>Grocery</em>, <em>Frozen</em> and <em>Detergents_Paper</em>. The significantly lower values compared to the average values in these categories support this thesis. In addition, the fact that the values in these categories are also significantly different from the values of record 100 shows that this customer is of a different type (i.e., cluster).</p>
-<h4 id="Index-170---Lebensmittelhandel">Index 170 - Lebensmittelhandel<a class="anchor-link" href="#Index-170---Lebensmittelhandel">&#182;</a></h4><p>This customer could be a <strong>Grocer</strong>. Grocers are characterized - as compared to full-range supermarkets - by the fact that they offer mainly food and only a few goods of other categories such as <em>Fresh</em> or <em>Frozen</em>. Also in this case, it helps me to take a look at the averages of the six categories and compare them with the other records. Compared to the supermarket (record 100) and the restaurant (record 150), the value of this customer in the category <em>Fresh</em> is significantly lower at just 260. At the same time, this customer has the highest values of all three data sets in the <em>Milk</em> and <em>Grocery</em> categories. Since I expect a grocer to sell milk and other foods my assessment might be correct.</p>
+<h4 id="Index-100---supermarket">Index 100 - supermarket<a class="anchor-link" href="#Index-100---supermarket">&#182;</a></h4><p>This customer could be a big <strong>supermarket</strong>. Supermarkets are characterized by offering customers a wide selection of food and drugstore/household items. Since this establishment has above-average values in the product categories <em>Milk</em>, <em>Grocery</em>, <em>Detergents_Papers</em> and <em>Delicatessen</em>, which I also expect at a supermarket, the assumption not only suggests that it is a supermarket, but also that it is a big supermarket. In addition, the values in the categories <em>Fresh</em> and <em>Frozen</em> are close to the respective averages, which also supports my thesis.</p>
+<h4 id="Index-150---restaurant">Index 150 - restaurant<a class="anchor-link" href="#Index-150---restaurant">&#182;</a></h4><p>This customer could be a <strong>restaurant</strong>. Restaurants - especially good restaurants - are characterized by the use of fresh ingredients. The value of 16225, well above the mean value of 12000 in the category <em>Fresh</em>, indicates that this is such an establishment. Restaurants also need fewer products in the categories <em>Milk</em>, <em>Grocery</em>, <em>Frozen</em> and <em>Detergents_Paper</em>. The significantly lower values compared to the average values in these categories support this thesis. In addition, the fact that the values in these categories are also significantly different from the values of record 100 shows that this customer is of a different type (i.e., cluster).</p>
+<h4 id="Index-170---grocer">Index 170 - grocer<a class="anchor-link" href="#Index-170---grocer">&#182;</a></h4><p>This customer could be a <strong>grocer</strong>. Grocers are characterized - as compared to full-range supermarkets - by the fact that they offer mainly food and only a few goods of other categories such as <em>Fresh</em> or <em>Frozen</em>. Also in this case, it helps me to take a look at the averages of the six categories and compare them with the other records. Compared to the supermarket (record 100) and the restaurant (record 150), the value of this customer in the category <em>Fresh</em> is significantly lower at just 260. At the same time, this customer has the highest values of all three data sets in the <em>Milk</em> and <em>Grocery</em> categories. Since I expect a grocer to sell milk and other foods my assessment might be correct.</p>
 <p>The consideration of the three datasets helps to gain insights in the entire dataset and thus the wholesaler's customers. The diversity of the three datasets proves that there are different clusters, and thus types of customers, that should potentially be served / treated differently.</p>
 
 </div>
@@ -13697,7 +13697,7 @@ div#notebook {
 <li><em>Grocery</em> and <em>Detergents_Paper</em> also have a strong correlation with a coefficient value of 0.92.</li>
 <li>There is a high correlation between <em>Detergents_Paper</em> and <em>Milk</em> with a correlation coefficient of 0.66.</li>
 </ul>
-<p>Referring to Question 2:
+<p>Referring to Question 2:<br>
 As already suggested, the feature <em>Grocery</em> which I tried to predict correlates with three other features (<em>Milk</em>, <em>Detergents_Paper</em> and <em>Delicatessen</em>). It even correlates very strong with two of them (correlation coefficients: 0.92 for <em>Detergents_Paper</em> and 0.73 for <em>Milk</em>). Therefore for the description of the customer behavior the feature <em>Grocery</em> individually has no relevance.</p>
 
 </div>
@@ -15095,21 +15095,27 @@ Some methods of unsupervised learning are very prone to bias by outliers. An exa
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><h4 id="Advantages-of-K-Means-clustering">Advantages of K-Means clustering<a class="anchor-link" href="#Advantages-of-K-Means-clustering">&#182;</a></h4><ul>
-<li>Easy to implement</li>
-<li>With a large number of variables, K-Means may be computationally faster than other clustering methods (at least as long as k is small)</li>
-<li>An instance can change cluster when the centroids are recomputed</li>
-</ul>
-<p>Source: <a href="http://stp.lingfil.uu.se/~santinim/ml/2016/Lect_10/10c_UnsupervisedMethods.pdf">http://stp.lingfil.uu.se/~santinim/ml/2016/Lect_10/10c_UnsupervisedMethods.pdf</a></p>
-<h4 id="Advantages-of-Gaussian-Mixture-Model-clustering">Advantages of Gaussian Mixture Model clustering<a class="anchor-link" href="#Advantages-of-Gaussian-Mixture-Model-clustering">&#182;</a></h4><ul>
-<li>Speed: It is the fastest algorithm for learning mixture models</li>
-<li>Agnostic: As this algorithm maximizes only the likelihood, it will not bias the means towards zero, or bias the cluster sizes to have specific structures that might or might not apply.</li>
-</ul>
-<p>Source: <a href="https://scikit-learn.org/stable/modules/mixture.html">https://scikit-learn.org/stable/modules/mixture.html</a></p>
-<h4 id="Decision-for-one-method">Decision for one method<a class="anchor-link" href="#Decision-for-one-method">&#182;</a></h4><p>I will use the Gaussian Mixture Model method below.
-There are two reasons:</p>
+<h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><p>The main differences between <strong>K-Means Clustering</strong> and <strong>Gaussian Mixture Model Clustering</strong> are the <em>speed</em> and <em>structural information</em> of each:</p>
+<h3 id="Advantages-of-K-Means-clustering">Advantages of K-Means clustering<a class="anchor-link" href="#Advantages-of-K-Means-clustering">&#182;</a></h3><p><strong>Speed</strong></p>
 <ul>
-<li>With the K-Means method you have to determine in advance how many clusters you want to calculate. In contrast, GMM calculates the number of useful clusters itselfs. Since I can not detect any clusters in the acquisition of the dataset (number of datasets and number of features), it is not possible for me to estimate how many clusters it will be.</li>
+<li>K-Means is much faster than GMM because no information about the distribution of the data such as covariance, mean and variance needs to be included in the calculation. Also, no probable affiliation to the possible clusters needs to be calculated.</li>
+<li>Since it is faster than other unsupervised learning algorithms and works performant with large datasets it is more scalable.</li>
+</ul>
+<p><strong>Structural information</strong></p>
+<ul>
+<li>K-Means is a method of hard clustering. Thus, each data point is assigned to exactly one cluster. This can be beneficial if you just want to reach straight boundaries between the clusters.</li>
+</ul>
+<h3 id="Advantages-of-Gaussian-Mixture-Model-clustering">Advantages of Gaussian Mixture Model clustering<a class="anchor-link" href="#Advantages-of-Gaussian-Mixture-Model-clustering">&#182;</a></h3><p><strong>Speed</strong></p>
+<ul>
+<li>It is the fastest algorithm for learning mixture models.</li>
+</ul>
+<p><strong>Structural information</strong></p>
+<ul>
+<li>GMM is a method of soft clustering. This means that for each datapoint the probability for the affiliation to the clusters is calculated. Like this you get much more structural information about the data and you can measure how wide each cluster is.</li>
+</ul>
+<h3 id="Decision-for-one-method">Decision for one method<a class="anchor-link" href="#Decision-for-one-method">&#182;</a></h3><p>I will use the Gaussian Mixture Model method below.<br>
+There is one main reason:</p>
+<ul>
 <li>GMM is a method of soft clustering. Unlike K-Means, not every data point is assigned to exactly one cluster here. Soft clustering is characterized by the fact that the data points are assigned to each cluster, where a certain weight/probability is calculated for every cluster. Since I suspect that some customers could not be assigned to one single cluster in this dataset, I choose GMM.</li>
 </ul>
 
@@ -15227,7 +15233,7 @@ The mean silhouette coefficient for 25 chosen clusters is 0.304409
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><p>I tried a range of 2 to 25 clusters.<br>
+<h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><p>I tried a range from 2 to 25 clusters.<br>
 The following values for the mean silhouette coefficient have been calculated:</p>
 <ul>
 <li>The mean silhouette coefficient for 2 chosen clusters is 0.421917</li>
@@ -15482,13 +15488,13 @@ Sample point 2 predicted to be in Cluster 1
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><p>At <strong>Question 1</strong> I made the following prediction:</p>
+<h2 id="Answer:">Answer:<a class="anchor-link" href="#Answer:">&#182;</a></h2><p>In <strong>Question 1</strong> I made the following prediction:</p>
 <ul>
 <li>Sample point 0: Supermarket</li>
 <li>Sample point 1: Restaurant</li>
 <li>Sample point 2: Grocer</li>
 </ul>
-<p>At <strong>Question 8</strong> I have made the following assumption for the two segments:</p>
+<p>In <strong>Question 8</strong> I have made the following assumption for the two segments:</p>
 <ul>
 <li>Segment 0: Gastronomy</li>
 <li>Segment 1: Distribution/Trade</li>
@@ -15499,7 +15505,7 @@ Sample point 2 predicted to be in Cluster 1
 <li>Sample point 1 predicted to be in cluster 0</li>
 <li>Sample point 2 predicted to be in cluster 1</li>
 </ul>
-<h4 id="Result">Result<a class="anchor-link" href="#Result">&#182;</a></h4><p>If you summarize the above points:</p>
+<h4 id="Result">Result<a class="anchor-link" href="#Result">&#182;</a></h4><p>If you summarize the points above:</p>
 <ul>
 <li>Supermarket in segment Distribution/Trade</li>
 <li>Restaurant in segment Gastronomy</li>
